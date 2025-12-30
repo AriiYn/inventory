@@ -1,0 +1,19 @@
+
+ADMIN -> -Data Admin
+		 -Data Rak
+		 -Data Supplier
+		 -Data Barang
+		 -Data Barang Masuk
+		 -Data Barang Keluar
+
+PETUGAS ->-Data Barang Masuk
+		  -Data Ajuan
+
+Login default :
+  1. Login Admin :
+    	username = admin
+    	password = admin
+   
+  2. Login Petugas
+		username = petugas
+    	password = petugas
