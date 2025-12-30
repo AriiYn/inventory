@@ -1,172 +1,100 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation - Web Inventory</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #2c3e50;
-            --secondary: #3498db;
-            --danger: #e74c3c;
-            --light: #f4f6f9;
-            --dark: #212529;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: var(--light);
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 2px solid var(--light);
-            padding-bottom: 30px;
-            margin-bottom: 30px;
-        }
-
-        h1 { color: var(--primary); margin-bottom: 10px; }
-        h2 { color: var(--secondary); border-left: 5px solid var(--secondary); padding-left: 15px; margin-top: 30px; }
-
-        .badge {
-            background: var(--secondary);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-        }
-
-        .login-box {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        table th, table td {
-            padding: 12px;
-            border: 1px solid #dee2e6;
-            text-align: left;
-        }
-
-        table th { background-color: var(--primary); color: white; }
-
-        .code-block {
-            background: #272822;
-            color: #f8f8f2;
-            padding: 15px;
-            border-radius: 8px;
-            font-family: 'Courier New', Courier, monospace;
-            overflow-x: auto;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #7f8c8d;
-        }
-
-        .feature-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: center;
-        }
-
-        .feature-item i {
-            color: var(--secondary);
-            margin-right: 10px;
-        }
-    </style>
+    <title>README - Web Inventory</title>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <i class="fas fa-boxes fa-4x" style="color: var(--danger);"></i>
-        <h1>Web Inventory System</h1>
-        <span class="badge">v1.0.0</span>
-        <p>Sistem Manajemen Stok Barang Berbasis PHP & MySQL</p>
-    </header>
+    <center>
+        <h1>DOKUMENTASI SISTEM WEB INVENTORY</h1>
+        <p>Aplikasi Manajemen Stok Barang dan Transaksi Keluar/Masuk</p>
+    </center>
 
-    <h2><i class="fas fa-info-circle"></i> Deskripsi</h2>
-    <p>Aplikasi ini dikembangkan untuk memudahkan pengelolaan inventaris barang secara digital. Sistem mencakup pelacakan barang keluar, barang masuk, dan sinkronisasi stok secara otomatis berdasarkan ajuan dari petugas.</p>
+    <hr>
 
-    <h2><i class="fas fa-user-lock"></i> Kredensial Login</h2>
-    <div class="login-box">
-        <table>
-            <thead>
-                <tr>
-                    <th>Level Akses</th>
-                    <th>Username</th>
-                    <th>Password</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Administrator</strong></td>
-                    <td>admin</td>
-                    <td><code>admin</code></td>
-                </tr>
-                <tr>
-                    <td><strong>Petugas</strong></td>
-                    <td>petugas</td>
-                    <td><code>petugas</code></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <h2>1. Deskripsi Proyek</h2>
+    <p>
+        Sistem ini adalah aplikasi berbasis web yang digunakan untuk mengelola data inventaris secara real-time. 
+        Aplikasi ini mendukung otomatisasi nomor transaksi, pengelolaan data master (barang, supplier, rak), 
+        serta sistem pengajuan barang oleh petugas.
+    </p>
 
-    <h2><i class="fas fa-star"></i> Fitur Utama</h2>
-    <div class="feature-list">
-        <div class="feature-item"><i class="fas fa-check-circle"></i> Multi-level User (Admin & Petugas)</div>
-        <div class="feature-item"><i class="fas fa-check-circle"></i> Laporan Barang Keluar & Masuk</div>
-        <div class="feature-item"><i class="fas fa-check-circle"></i> Cetak Laporan PDF/Print</div>
-        <div class="feature-item"><i class="fas fa-check-circle"></i> Penomoran Otomatis (No. Keluar)</div>
-        <div class="feature-item"><i class="fas fa-check-circle"></i> UI Responsif (Mobile Friendly)</div>
-        <div class="feature-item"><i class="fas fa-check-circle"></i> Filter Berdasarkan Bulan & Tahun</div>
-    </div>
+    <hr>
 
-    <h2><i class="fas fa-terminal"></i> Instalasi</h2>
+    <h2>2. Hak Akses & Kredensial</h2>
+    <p>Sistem ini memiliki dua level pengguna (role) dengan akses yang berbeda:</p>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr bgcolor="#dddddd">
+                <th>Role User</th>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Administrator</b></td>
+                <td>admin</td>
+                <td>admin</td>
+            </tr>
+            <tr>
+                <td><b>Petugas</b></td>
+                <td>petugas</td>
+                <td>petugas</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>3. Fitur Utama</h2>
+    <ul>
+        <li><b>Dashboard:</b> Ringkasan data inventori.</li>
+        <li><b>Master Data:</b> Kelola data Admin, Petugas, Supplier, Rak, dan Barang.</li>
+        <li><b>Transaksi Barang Masuk:</b> Pencatatan stok yang masuk ke gudang.</li>
+        <li><b>Transaksi Barang Keluar:</b> Pencatatan pengeluaran stok berdasarkan nomor ajuan.</li>
+        <li><b>Penomoran Otomatis:</b> Sistem otomatis membuat ID transaksi (No Keluar).</li>
+        <li><b>Laporan:</b> Cetak laporan per periode bulan dan tahun.</li>
+    </ul>
+
+    <hr>
+
+    <h2>4. Spesifikasi Teknis</h2>
+    <ul>
+        <li>Bahasa: PHP</li>
+        <li>Database: MySQLi</li>
+        <li>Interface: HTML (Modern Style Interface)</li>
+        <li>Library: FontAwesome & Animate On Scroll (AOS)</li>
+    </ul>
+
+    <hr>
+
+    <h2>5. Cara Instalasi</h2>
     <ol>
-        <li>Clone atau Download file ZIP project ini.</li>
-        <li>Buat database di MySQL dengan nama <code>db_inventory</code>.</li>
-        <li>Buka file <code>koneksi.php</code> dan sesuaikan host, user, dan password database Anda.</li>
-        <li>Akses aplikasi melalui browser: <code>http://localhost/inventory</code>.</li>
+        <li>Ekstrak folder project ke dalam direktori <b>htdocs</b>.</li>
+        <li>Buat database baru bernama <b>db_inventory</b> melalui phpMyAdmin.</li>
+        <li>Import file database (SQL) yang disediakan ke dalam <b>db_inventory</b>.</li>
+        <li>Konfigurasi koneksi database pada file <b>koneksi.php</b>.</li>
+        <li>Buka browser dan ketik: <u>http://localhost/nama_folder_anda</u>.</li>
     </ol>
 
-    <div class="footer">
-        <p>Copyright &copy; 2025 - <strong>Fakhri Afkar</strong>. All Rights Reserved.</p>
-    </div>
-</div>
+    <hr>
+
+    <h2>6. Struktur Database Terkait</h2>
+    <p>Beberapa tabel utama yang digunakan dalam sistem ini:</p>
+    <ul>
+        <li><b>tb_admin:</b> Menyimpan data kredensial admin.</li>
+        <li><b>tb_barang_out:</b> Menyimpan riwayat transaksi barang keluar.</li>
+        <li><b>tb_ajuan:</b> Menyimpan data permohonan barang dari petugas.</li>
+        <li><b>tb_barang:</b> Menyimpan detail informasi stok barang.</li>
+    </ul>
+
+    <hr>
+
+    <p align="center">
+        <b>Developer:</b> Fakhri Afkar<br>
+        <i>Hak Cipta &copy; 2025 - All Rights Reserved</i>
+    </p>
 
 </body>
 </html>
